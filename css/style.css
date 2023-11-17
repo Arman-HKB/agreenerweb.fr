@@ -1,0 +1,359 @@
+@import url("./satoshi.css");
+
+/* Global */
+* {
+    color: #444!important;
+    z-index: 1;
+    font-family: 'Satoshi-Regular';
+}
+
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea { 
+    resize: vertical; 
+}
+
+.icon {
+    background: linear-gradient(90deg, rgba(212,235,147,1) 0%, rgba(193,230,88,1) 20%, rgba(133,184,87,1) 50%, rgba(103,135,67,1) 100%);
+    font-weight: semi-bold;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    color: #fff!important;
+}
+
+i:not(#submit i)::before {
+    background: linear-gradient(90deg, rgba(212,235,147,1) 0%, rgba(193,230,88,1) 20%, rgba(133,184,87,1) 50%, rgba(103,135,67,1) 100%);
+    font-weight: semi-bold;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 2rem!important;
+}
+
+/* Navbar */
+.navbar {
+    font-size: 1.25rem;
+    vertical-align: middle!important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-family: 'Satoshi-Bold';
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+/* Scrollspy */
+.scrollspy {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    right: 10%;
+    z-index: 99;
+}
+
+.scrollspy a {
+    font-family: 'Satoshi-Light';
+    background: transparent;
+    width: 3rem;
+    height: 3rem;
+    margin: 5rem 0 5rem 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: rgba(133,184,87,1)!important;
+    border: rgba(133,184,87,1) 2px solid;
+}
+
+.scrollspy .active {
+    color: white!important;
+    background: rgba(133,184,87,1)!important;
+}
+
+/* Header */
+header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+.right-side {
+    position: relative;
+}
+
+.right-side img {
+    height: 45rem;
+    width: 45rem;
+
+}
+
+/* Forms */
+.rectangle {
+    position: absolute;
+    top: 25%;
+    right: -55%;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    background-color: #edf4da;
+}
+
+.dots {
+    position: absolute;
+    height: 2rem;
+    width: auto;
+}
+
+#dots_1 {
+    top: -1rem;
+    left: 3rem;
+}
+
+/* Sections */
+#services, #contact {
+    height: 100vh;
+}
+
+#services {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center!important;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+/* Titles and texts */
+.title-1 {
+    font-size: 3rem;
+    font-family: 'Satoshi-Medium';
+}
+
+.title-2 {
+    font-size: 1rem;
+    font-family: 'Satoshi-Medium';
+}
+
+.title-3 {
+    font-size: 2.5rem;
+    font-family: 'Satoshi-Black';
+}
+
+.title-grey {
+    color: #777!important;
+}
+
+.card .title-3 {
+    position: relative;
+}
+
+.euro {
+    position: absolute!important;
+    top: 5px!important;
+    font-size: 1.5rem!important; 
+}
+
+/* Buttons and links */
+.navbar button {
+    background: transparent;
+    border: none;
+}
+
+button, .button {
+    background: linear-gradient(90deg, rgba(212,235,147,1) 0%, rgba(193,230,88,1) 20%, rgba(133,184,87,1) 50%, rgba(103,135,67,1) 100%);
+    color: #fff!important;
+    font-weight: semi-bold;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+.outline {
+    background: transparent;
+    outline: 1px solid rgba(133,184,87,1);
+    color: #444!important;
+    transition: all 0.5s;
+}
+
+.outline:hover {
+    background: linear-gradient(90deg, rgba(212,235,147,1) 0%, rgba(193,230,88,1) 20%, rgba(133,184,87,1) 50%, rgba(103,135,67,1) 100%);
+    color: #fff!important;
+    outline: none;
+}
+
+/* Cards */
+#stats .card {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+#stats .card:hover {
+    opacity: 1!important;
+}
+
+.card {
+    padding: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 0!important;
+}
+
+.card img {
+    align-self: center;
+    height: 100%;
+    width: 100%; 
+}
+
+#services .card {
+    border: 1px solid lightgray;
+    border-bottom: 7px solid rgba(133,184,87,1);
+    transition: transform 0.3s;
+}
+
+#services .card:hover {
+    transform: translateY(-20px); 
+}
+
+/* Contact form */
+#contact {
+    background-image: url("../img/background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*height: 50rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+#contact .innerform {
+    position: relative;
+    padding: 3.5rem;
+    overflow:hidden;
+}
+
+#contact .innerform input, #contact .innerform select, #contact .innerform textarea {
+    border: 1px solid lightgray;
+    border-bottom: 3px solid rgba(133,184,87,1);
+}
+
+.small-text {
+    text-align: justify;
+}
+
+/* Animations */
+@keyframes alive {
+    0%, 100% {
+        border-radius: 35% 65% 41% 59% / 65% 30% 70% 35% ;
+    }
+    50% {
+        border-radius: 64% 36% 50% 50% / 51% 49% 51% 49%  ;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+}
+
+@keyframes breath {
+    0%, 100% {
+        box-shadow: 0.5px 0.5px 10px 0.5px rgba(133,184,87,1);
+    }
+    50% {
+        box-shadow: none;
+    }
+}
+
+/* MEDIA QUERIES */
+/* MD */
+@media screen and (max-width: 991px) {
+    .scrollspy {
+        display: none;
+    }
+    header, #services, #contact {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .right-side {
+        display: flex!important;
+        justify-content:center!important;
+    }
+    .rectangle {
+        display: none;
+    }
+    #services .row {
+        --bs-gutter-y: 1.5rem;
+        --bs-gutter-x: 1.5rem;
+    }
+    #contact, #contact .innerform {
+        padding: 2.5rem;
+    }
+}
+
+/* SM */
+@media screen and (max-width: 767px) {
+    #services .card:hover {
+        transform: none; 
+    }
+    #contact {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    #contact .innerform {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        background: transparent!important;
+    }
+}
+
+/* XS */
+@media screen and (max-width: 575px) {
+    #services .card {
+        width: 85%!important;
+    }
+}
